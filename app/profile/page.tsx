@@ -7,7 +7,7 @@ import FloatingNavbar from "@/app/components/ui/landing/FloatingNavbar";
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#FAFAF8] pb-36">
-      <div className="w-auto px-4 mx-auto pt-6 space-y-5">
+      <div className="w-auto px-8 mx-auto pt-6 space-y-5">
         <Header />
         <PetCard />
         <MapCard />
