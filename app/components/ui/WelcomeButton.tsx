@@ -3,6 +3,7 @@ import { motion, useMotionValue, useTransform, useMotionValueEvent } from "frame
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 
+
 export default function SwipeButton() {
   const x = useMotionValue(0);
   const [done, setDone] = useState(false);
@@ -39,7 +40,7 @@ export default function SwipeButton() {
           onDragEnd={(e, info) => {
             if (info.offset.x < -180) {
               setTimeout(() => {
-                window.location.href = "https://example.com";
+                window.location.href = "/profile";
               }, 500);
             } else {
               x.set(0);

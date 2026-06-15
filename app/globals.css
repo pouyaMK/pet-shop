@@ -1,16 +1,20 @@
 
-
-/* 
-
-@import "tailwindcss";
-
-html {
-  font-family: var(--font-yekan-bakh);
-}
- */
-
  @import "tailwindcss";
 
  body {
    font-family: var(--font-yekan-bakh);
  }
+
+
+ .glass {
+  background: rgba(255,255,255,.55);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  border: 1px solid rgba(255,255,255,.45);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,.12),
+    inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 -1px 1px rgba(255,255,255,.25);
+}

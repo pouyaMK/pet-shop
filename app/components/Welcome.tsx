@@ -6,26 +6,12 @@ import Image from "next/image";
 import { Icon } from "@iconify/react";
 import img1 from "@/public/assets/imgs/12.png";
 import WelcomeButton from "@/app/components/ui/WelcomeButton"
+
+
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f1e7da] flex items-center justify-center p-6">
-
-      {/* Phone Frame */}
-      <div className="w-[360px] h-[760px] bg-[#fafaf8] rounded-[50px] border-[8px] border-white shadow-xl overflow-hidden relative">
-
-        {/* Dynamic Island */}
-        <div className="absolute top-3 left-1/2 -translate-x-1/2 w-30 h-8.5 bg-[#151515] rounded-full z-20" />
-
-        {/* Status Bar */}
-        <div className="flex justify-between items-center px-7 pt-5 text-sm font-semibold text-[#151515]">
-          <span>11:30</span>
-
-          <div className="flex items-center gap-1">
-            <Icon icon="mdi:signal" width={16} />
-            <Icon icon="mdi:wifi" width={16} />
-            <Icon icon="mdi:battery" width={18} />
-          </div>
-        </div>
 
         {/* Decorations */}
         <div className="absolute right-12 top-16">
@@ -37,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="px-7 pt-10 flex flex-col items-center">
+        <div className="px-7 flex flex-col items-center">
 
           {/* Title */}
           <h1 className="text-center leading-10">
@@ -45,12 +31,12 @@ export default function Home() {
               پت شاپ
             </span>
 
-            <span className="block text-[48px] font-bold text-[#151515]">
+            <span className="block text-[58px] font-extrabold text-[#151515]">
               پتیلو
             </span>
           </h1>
 
-          <p className="text-[#a77b5a] text-sm mt-2 text-center">
+          <p className="text-[#a77b5a] text-sm mt-4 text-center">
             بیایید سفر مراقبت از حیوان خانگی‌تان را آغاز کنیم
           </p>
 
@@ -68,8 +54,8 @@ export default function Home() {
             <Image
               src={img1}
               alt="cat"
-              width={250}
-              height={250}
+              width={350}
+              height={350}
               className="object-cover"
             />
 
@@ -80,10 +66,9 @@ export default function Home() {
           <WelcomeButton />
 
         </div>
-      </div>
+      
     </main>
-  );
+  )
 }
-
 
 

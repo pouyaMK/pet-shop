@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { yekanBakh, openSans } from "./style/font";
+// import { yekanBakh, openSans } from "./style/font";
+import { yekanBakh } from "./style/font";
 import "./globals.css";
 
 
@@ -21,7 +22,7 @@ export default function RootLayout({
     >
         <body style={{ fontFamily: "var(--font-yekan-bakh)" }}   className={`
     ${yekanBakh.variable}
-    ${openSans.variable}
+
     font-yekan
     min-h-full
     flex
